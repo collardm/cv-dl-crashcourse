@@ -63,6 +63,8 @@ Next, use pip to install the required python packages. If you are not using virt
 
     $ python3 -m pip install --upgrade -r requirements.txt
 
+* Note: You may want to remove dlib from the requirements.txt
+
 Congrats! You are ready to learn Compute Vision and Deep Learning, hands on!
 
 Next, jump to the first tutorial **Day 1 : Face detection with OpenCV and deep learning**
@@ -123,3 +125,54 @@ Link to the blog post: <https://www.pyimagesearch.com/2016/03/28/measuring-size-
 Thanks to the width of the left-most object in the image (in inches), our reference object, we can dertermine the size of any object in an image.
 
     $  python 6-measuring-size-objetcs/object_size.py --image 6-measuring-size-objetcs/images/example_01.png --width 0.955 
+
+# Day 8 | Facial landmarks with dlib and OpenCV
+
+For this tutorial, you will need to install and configure dlib. I recommend this post [How to install dlib](https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/) by Adrian Rosebrock.
+For Windows : 
+* Install Visual Studio 2019
+* Install CMake
+* Run install script below 
+
+<details>
+    <summary>Click me to show code.</summary>
+    <pre>
+        <code>
+
+$ git clone https://github.com/davisking/dlib.git
+$ cd dlib-19.17
+$ git checkout tags/v19.17mkdir build
+
+$ mkdir build
+$ cd build
+
+$ cd buildcmake -G "Visual Studio 16 2019" -A x64 \
+-DJPEG_INCLUDE_DIR=..\dlib\external\libjpeg \
+-DJPEG_LIBRARY=..\dlib\external\libjpeg \
+-DPNG_PNG_INCLUDE_DIR=..\dlib\external\libpng \
+-DPNG_LIBRARY_RELEASE=..\dlib\external\libpng \
+-DZLIB_INCLUDE_DIR=..\dlib\external\zlib \
+-DZLIB_LIBRARY_RELEASE=..\dlib\external\zlib \
+-DCMAKE_INSTALL_PREFIX=install ..
+
+$ cmake --build . --config Debug --target INSTALL
+
+</code>
+    </pre>
+</details>
+
+Finally, go to the folder dlib-19.17 (for me) and execute :
+
+    $ python setup.py install
+
+To run the code :
+
+    $ python 8-facial-landmarks/facial_landmarks.py --shape-predictor 8-facial-landmarks/model/shape_predictor_68_face_landmarks.dat --image 8-facial-landmarks/images/example_03.jpg
+
+## Day 9 | Eye blink detection with OpenCV, Python and dlib
+
+Link to the blog post : <https://www.pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib>
+
+Eye blinking is a tricky combination of severals image processing methods.
+
+    $ python 9-blink-detection/detect_blinks.py --shape-predictor 9-blink-detection/model/shape_predictor_68_face_landmarks.dat
