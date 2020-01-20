@@ -100,3 +100,10 @@ A practical application of edge detection to find the Region Of Interest and per
 
     $ python 3-document-scanner/scan.py --image 3-document-scanner/images/page.jpg
 
+## Day 4 | Multiple Choice Questions scanner using Optical Mark Recognition
+
+Link to the blog post: <https://www.pyimagesearch.com/2016/10/03/bubble-sheet-multiple-choice-scanner-and-test-grader-using-omr-python-and-opencv>
+
+This is a bubble sheet scanner and test grader building.
+
+    $ python 4-omr-on-mcq/test_grader.py --image 4-omr-on-mcq/images/test_01.png
