@@ -116,3 +116,10 @@ This code detect the presence of a colored ball using computer vision techniques
 
     $ python 5-ball-tracking/ball_tracking.py --video 5-ball-tracking/ball_tracking_example.mp4
 
+## Day 6 | Measuring the size of objetcs with OpenCV
+
+Link to the blog post: <https://www.pyimagesearch.com/2016/03/28/measuring-size-of-objects-in-an-image-with-opencv>
+
+Thanks to the width of the left-most object in the image (in inches), our reference object, we can dertermine the size of any object in an image.
+
+    $  python 6-measuring-size-objetcs/object_size.py --image 6-measuring-size-objetcs/images/example_01.png --width 0.955 
