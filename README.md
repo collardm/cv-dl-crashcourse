@@ -91,3 +91,12 @@ Fundamentals of the basics image processing using OpenCV, the world's most popul
 Counting objects in an image uses a lots of processing technique like edge detection, masking and bitwise operations, etc.. :
 
     $ python 2-opencv-tutorial/opencv_tutorial_02.py --image images/tetris_blocks.png
+
+## Day 3 | Mobile Document Scanner
+
+Link to the blog post: <https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes>
+
+A practical application of edge detection to find the Region Of Interest and perspective transform to correctly view the document :
+
+    $ python 3-document-scanner/scan.py --image 3-document-scanner/images/page.jpg
+
