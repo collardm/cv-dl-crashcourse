@@ -104,6 +104,15 @@ A practical application of edge detection to find the Region Of Interest and per
 
 Link to the blog post: <https://www.pyimagesearch.com/2016/10/03/bubble-sheet-multiple-choice-scanner-and-test-grader-using-omr-python-and-opencv>
 
-This is a bubble sheet scanner and test grader building.
+This is a bubble sheet scanner and test grader.
 
     $ python 4-omr-on-mcq/test_grader.py --image 4-omr-on-mcq/images/test_01.png
+
+## Day 5 | Object tracker
+
+Link to the blog post: <https://www.pyimagesearch.com/2015/09/14/ball-tracking-with-opencv>
+
+This code detect the presence of a colored ball using computer vision techniques and then track the ball as it moves.
+
+    $ python 5-ball-tracking/ball_tracking.py --video 5-ball-tracking/ball_tracking_example.mp4
+
