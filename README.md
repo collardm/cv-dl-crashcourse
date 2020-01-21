@@ -17,7 +17,8 @@
 1. [Day 10 | Drowsiness detection](#ch10)
 1. [Day 12 | Dogs vs. Cats : Feedforward neural networks with Keras](#ch12)
 1. [Day 13 | Deep Learning with OpenCV](#ch13)
-
+1. [Day 14 | Create custom DL datasets](#ch14)
+1. [Day 15 | Train a Convolutional Neutal Networks with Keras](#ch15)
 
 <a id="ch0"></a>
 # Intallation
@@ -256,3 +257,25 @@ OpenCV provides pre-trained convolutional neural network on ImageNet dataset.
     --prototxt 13-dl-cv2/model/bvlc_googlenet.prototxt \
     --model 13-dl-cv2/model/bvlc_googlenet.caffemodel \
     --labels 13-dl-cv2/model/synset_words.txt
+
+<a id="ch14"></a>
+## Day 14 | Create custom DL datasets
+
+Link to the blog post: <https://www.pyimagesearch.com/2018/04/09/how-to-quickly-build-a-deep-learning-image-dataset>
+
+Deep Learning is all about DATA, so let's see how to create a cumtom dataset.
+
+<a id="ch15"></a>
+## Day 15 | Train a Convolutional Neutal Networks with Keras
+
+Link to the blog post: <https://www.pyimagesearch.com/2018/04/16/keras-and-convolutional-neural-networks-cnns>
+
+To train : 
+
+    $ python 15-cnn-keras/train.py --dataset 15-cnn-keras/dataset \
+    --model 15-cnn-keras/pokedex.model --labelbin 15-cnn-keras/lb.pickle
+
+To test:
+
+    $ python 15-cnn-keras/classify.py --model 15-cnn-keras/pokedex.model \
+    --labelbin 15-cnn-keras/lb.pickle --image 15-cnn-keras/examples/charmander_counter.png
