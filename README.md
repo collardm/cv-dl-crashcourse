@@ -15,6 +15,8 @@
 1. [Day 8 | Facial landmarks with dlib and OpenCV](#ch8)
 1. [Day 9 | Eye blink detection with OpenCV, Python and dlib](#ch9)
 1. [Day 10 | Drowsiness detection](#ch10)
+1. [Day 12 | Dogs vs. Cats : Feedforward neural networks with Keras](#ch12)
+1. [Day 13 | Deep Learning with OpenCV](#ch13)
 
 
 <a id="ch0"></a>
@@ -153,6 +155,8 @@ Thanks to the width of the left-most object in the image (in inches), our refere
 <a id="ch8"></a>
 # Day 8 | Facial landmarks with dlib and OpenCV
 
+Link to the blog post : <https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python>
+
 For this tutorial, you will need to install and configure dlib. I recommend this post [How to install dlib](https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/) by Adrian Rosebrock.
 For Windows : 
 * Install Visual Studio 2019
@@ -216,8 +220,39 @@ For the example video execute the following command (make sure to uncomment the 
 <a id="ch10"></a>
 ## Day 10 | Drowsiness detection
 
+Link to the blog post: <https://www.pyimagesearch.com/2017/05/08/drowsiness-detection-opencv>
+
 Now we know how detect eye blink we can extend it to a drowsiness detection.
 
     $ python 10-detect-drowsiness/detect_drowsiness.py \
     --shape-predictor 10-detect-drowsiness/model/shape_predictor_68_face_landmarks.dat \
     --alarm 10-detect-drowsiness/sounds/alarm.wav
+
+<a id="ch12"></a>
+## Day 12 | Dogs vs. Cats : Feedforward neural networks with Keras
+
+Link to the blog post: <https://www.pyimagesearch.com/2016/09/26/a-simple-neural-network-with-python-and-keras>
+
+To train the neural network (download the train dataset from the kaggle competition Dogs vs. Cats) :
+
+    $ python 12-simple-neural-network/simple_neural_network.py \
+    --dataset 12-simple-neural-network/kaggle_dogs_vs_cats \
+    --model 12-simple-neural-network/output/simple_neural_network.hdf5
+
+To test our neural network :
+
+    $ python 12-simple-neural-network/test_network.py \
+    --model 12-simple-neural-network/output/simple_neural_network.hdf5 \
+	--test-images 12-simple-neural-network/test_images
+
+<a id="ch13"></a>
+## Day 13 | Deep Learning with OpenCV
+
+Link to the blog post: <https://www.pyimagesearch.com/2017/08/21/deep-learning-with-opencv>
+
+OpenCV provides pre-trained convolutional neural network on ImageNet dataset.
+
+    $ python 13-dl-cv2/dl_opencv.py --image 13-dl-cv2/images/jemma.png \
+    --prototxt 13-dl-cv2/model/bvlc_googlenet.prototxt \
+    --model 13-dl-cv2/model/bvlc_googlenet.caffemodel \
+    --labels 13-dl-cv2/model/synset_words.txt

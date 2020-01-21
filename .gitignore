@@ -138,3 +138,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# kaggle_dogs_vs_cats dataset
+/12-simple-neural-network/kaggle_dogs_vs_cats/
