@@ -1,5 +1,5 @@
 # USAGE
-# python 15-cnn-keras/classify.py --model 15-cnn-keras/pokedex.model --labelbin 15-cnn-keras/lb.pickle --image 15-cnn-keras/examples/charmander_counter.png
+# python 15-cnn-keras/classify.py --model 15-cnn-keras/model/pokedex.model --labelbin 15-cnn-keras/model/lb.pickle --image 15-cnn-keras/examples/charmander_counter.png
 
 # import the necessary packages
 from keras.preprocessing.image import img_to_array

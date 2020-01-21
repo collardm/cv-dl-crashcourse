@@ -273,9 +273,18 @@ Link to the blog post: <https://www.pyimagesearch.com/2018/04/16/keras-and-convo
 To train : 
 
     $ python 15-cnn-keras/train.py --dataset 15-cnn-keras/dataset \
-    --model 15-cnn-keras/pokedex.model --labelbin 15-cnn-keras/lb.pickle
+    --model 15-cnn-keras/model/pokedex.model --labelbin 15-cnn-keras/model/lb.pickle
 
 To test:
 
-    $ python 15-cnn-keras/classify.py --model 15-cnn-keras/pokedex.model \
-    --labelbin 15-cnn-keras/lb.pickle --image 15-cnn-keras/examples/charmander_counter.png
+    $ python 15-cnn-keras/classify.py --model 15-cnn-keras/model/pokedex.model \
+    --labelbin 15-cnn-keras/model/lb.pickle --image 15-cnn-keras/examples/charmander_counter.png
+
+<a id="ch16"></a>
+## Day 16 | Real-time object detection with deep learning and OpenCV
+
+Link to the blog post: <https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-learning-and-opencv>
+
+    $ python 16-object-detection/real_time_object_detection.py \
+	--prototxt 16-object-detection/model/MobileNetSSD_deploy.prototxt.txt \
+	--model 16-object-detection/model/MobileNetSSD_deploy.caffemodel

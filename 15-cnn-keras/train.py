@@ -1,5 +1,5 @@
 # USAGE
-# python 15-cnn-keras/train.py --dataset 15-cnn-keras/dataset --model 15-cnn-keras/pokedex.model --labelbin 15-cnn-keras/lb.pickle
+# python 15-cnn-keras/train.py --dataset 15-cnn-keras/dataset --model 15-cnn-keras/model/pokedex.model --labelbin 15-cnn-keras/model/lb.pickle
 
 # set the matplotlib backend so figures can be saved in the background
 import matplotlib
