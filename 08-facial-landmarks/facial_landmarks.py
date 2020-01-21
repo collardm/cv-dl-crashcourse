@@ -1,5 +1,5 @@
 # USAGE
-# python 8-facial-landmarks/facial_landmarks.py --shape-predictor 8-facial-landmarks/model/shape_predictor_68_face_landmarks.dat --image 8-facial-landmarks/images/example_03.jpg
+# python 08-facial-landmarks/facial_landmarks.py --shape-predictor 08-facial-landmarks/model/shape_predictor_68_face_landmarks.dat --image 08-facial-landmarks/images/example_03.jpg
 
 # import the necessary packages
 from imutils import face_utils

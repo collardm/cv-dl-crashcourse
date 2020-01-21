@@ -1,5 +1,5 @@
 # USAGE
-# python 3-document-scanner/scan.py --image 3-document-scanner/images/page.jpg
+# python 03-document-scanner/scan.py --image 03-document-scanner/images/page.jpg
 
 # import the necessary packages
 from pyimagesearch.transform import four_point_transform

@@ -1,5 +1,5 @@
 # USAGE
-# python 5-ball-tracking/ball_tracking.py --video 5-ball-tracking/ball_tracking_example.mp4
+# python 05-ball-tracking/ball_tracking.py --video 05-ball-tracking/ball_tracking_example.mp4
 
 # import the necessary packages
 from collections import deque

@@ -1,5 +1,5 @@
 # USAGE
-# python 2-opencv-tutorial/opencv_tutorial_02.py --image 2-opencv-tutorial/images/tetris_blocks.png
+# python 02-opencv-tutorial/opencv_tutorial_02.py --image 02-opencv-tutorial/images/tetris_blocks.png
 
 # import the necessary packages
 import argparse

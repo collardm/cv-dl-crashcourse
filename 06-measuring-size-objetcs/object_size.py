@@ -1,5 +1,5 @@
 # USAGE
-# python 6-measuring-size-objetcs/object_size.py --image 6-measuring-size-objetcs/images/example_01.png --width 0.955 
+# python 06-measuring-size-objetcs/object_size.py --image 06-measuring-size-objetcs/images/example_01.png --width 0.955 
 
 # import the necessary packages
 from scipy.spatial import distance as dist

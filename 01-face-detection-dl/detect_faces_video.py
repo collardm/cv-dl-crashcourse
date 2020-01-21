@@ -1,5 +1,5 @@
 # USAGE
-# python 1-face-detection-dl/detect_faces_video.py --prototxt model/deploy.prototxt.txt --model model/res10_300x300_ssd_iter_140000.caffemodel
+# python 01-face-detection-dl/detect_faces_video.py --prototxt 01-face-detection-dl/model/deploy.prototxt.txt --model 01-face-detection-dl/model/res10_300x300_ssd_iter_140000.caffemodel
 
 # import the necessary packages
 import os

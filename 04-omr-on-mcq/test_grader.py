@@ -1,5 +1,5 @@
 # USAGE
-# python 4-omr-on-mcq/test_grader.py --image 4-omr-on-mcq/images/test_01.png
+# python 04-omr-on-mcq/test_grader.py --image 04-omr-on-mcq/images/test_01.png
 
 # import the necessary packages
 from imutils.perspective import four_point_transform

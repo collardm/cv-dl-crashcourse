@@ -95,14 +95,14 @@ Link to the blog post: <https://www.pyimagesearch.com/2018/02/26/face-detection-
 
 In your virtual environment you can run this command to perform face detection on an image of your choice :
 
-    $ python 1-face-detection-dl/detect_faces.py --image images/rooster.jpg \
-    --prototxt model/deploy.prototxt.txt \
-    --model model/res10_300x300_ssd_iter_140000.caffemodel
+    $ python 01-face-detection-dl/detect_faces.py --image 01-face-detection-dl/images/rooster.jpg \
+    --prototxt 01-face-detection-dl/model/deploy.prototxt.txt \
+    --model 01-face-detection-dl/model/res10_300x300_ssd_iter_140000.caffemodel
     
 And for using the Webcam :
 
-    $ python 1-face-detection-dl/detect_faces_video.py --prototxt model/deploy.prototxt.txt \
-    --model model/res10_300x300_ssd_iter_140000.caffemodel
+    $ python 1-face-detection-dl/detect_faces_video.py --prototxt 01-face-detection-dl/model/deploy.prototxt.txt \
+    --model 01-face-detection-dl/model/res10_300x300_ssd_iter_140000.caffemodel
 
 <a id="ch2"></a>
 ## Day 2 | OpenCV Tutorial: A Guide to Learn OpenCV
@@ -111,11 +111,11 @@ Link to the blog post: <https://www.pyimagesearch.com/2018/07/19/opencv-tutorial
 
 Fundamentals of the basics image processing using OpenCV, the world's most popular computer vision library :
 
-    $ python 2-opencv-tutorial/opencv_tutorial_01.py
+    $ python 02-opencv-tutorial/opencv_tutorial_01.py
 
 Counting objects in an image uses a lots of processing technique like edge detection, masking and bitwise operations, etc.. :
 
-    $ python 2-opencv-tutorial/opencv_tutorial_02.py --image images/tetris_blocks.png
+    $ python 02-opencv-tutorial/opencv_tutorial_02.py --image images/tetris_blocks.png
 
 <a id="ch3"></a>
 ## Day 3 | Mobile Document Scanner
@@ -124,7 +124,7 @@ Link to the blog post: <https://www.pyimagesearch.com/2014/09/01/build-kick-ass-
 
 A practical application of edge detection to find the Region Of Interest and perspective transform to correctly view the document :
 
-    $ python 3-document-scanner/scan.py --image 3-document-scanner/images/page.jpg
+    $ python 03-document-scanner/scan.py --image 03-document-scanner/images/page.jpg
 
 <a id="ch4"></a>
 ## Day 4 | Multiple Choice Questions scanner using Optical Mark Recognition
@@ -133,7 +133,7 @@ Link to the blog post: <https://www.pyimagesearch.com/2016/10/03/bubble-sheet-mu
 
 This is a bubble sheet scanner and test grader.
 
-    $ python 4-omr-on-mcq/test_grader.py --image 4-omr-on-mcq/images/test_01.png
+    $ python 04-omr-on-mcq/test_grader.py --image 04-omr-on-mcq/images/test_01.png
 
 <a id="ch5"></a>
 ## Day 5 | Object tracker
@@ -142,7 +142,7 @@ Link to the blog post: <https://www.pyimagesearch.com/2015/09/14/ball-tracking-w
 
 This code detect the presence of a colored ball using computer vision techniques and then track the ball as it moves.
 
-    $ python 5-ball-tracking/ball_tracking.py --video 5-ball-tracking/ball_tracking_example.mp4
+    $ python 05-ball-tracking/ball_tracking.py --video 05-ball-tracking/ball_tracking_example.mp4
 
 <a id="ch6"></a>
 ## Day 6 | Measuring the size of objetcs with OpenCV
@@ -151,7 +151,7 @@ Link to the blog post: <https://www.pyimagesearch.com/2016/03/28/measuring-size-
 
 Thanks to the width of the left-most object in the image (in inches), our reference object, we can dertermine the size of any object in an image.
 
-    $  python 6-measuring-size-objetcs/object_size.py --image 6-measuring-size-objetcs/images/example_01.png \
+    $  python 06-measuring-size-objetcs/object_size.py --image 6-measuring-size-objetcs/images/example_01.png \
     --width 0.955 
 
 <a id="ch8"></a>
@@ -196,9 +196,9 @@ Finally, go to the folder dlib-19.17 (for me) and execute :
 
 To run the code :
 
-    $ python 8-facial-landmarks/facial_landmarks.py \
+    $ python 08-facial-landmarks/facial_landmarks.py \
     --shape-predictor 8-facial-landmarks/model/shape_predictor_68_face_landmarks.dat \
-    --image 8-facial-landmarks/images/example_03.jpg
+    --image 08-facial-landmarks/images/example_03.jpg
 
 <a id="ch9"></a>
 ## Day 9 | Eye blink detection with OpenCV, Python and dlib
@@ -209,14 +209,14 @@ Eye blinking is a tricky combination of severals image processing methods.
 
 To access to your webcam :
 
-    $ python 9-blink-detection/detect_blinks.py \
-    --shape-predictor 9-blink-detection/model/shape_predictor_68_face_landmarks.dat
+    $ python 09-blink-detection/detect_blinks.py \
+    --shape-predictor 09-blink-detection/model/shape_predictor_68_face_landmarks.dat
 
 For the example video execute the following command (make sure to uncomment the correct line, ad detailed in the code):
 
-    $ python 9-blink-detection/detect_blinks.py \
-	--shape-predictor 9-blink-detection/model/shape_predictor_68_face_landmarks.dat \
-	--video 9-blink-detection/videos/blink_detection_demo.mp4
+    $ python 09-blink-detection/detect_blinks.py \
+	--shape-predictor 09-blink-detection/model/shape_predictor_68_face_landmarks.dat \
+	--video 09-blink-detection/videos/blink_detection_demo.mp4
 
 
 <a id="ch10"></a>

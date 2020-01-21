@@ -1,5 +1,5 @@
 # USAGE
-# python 9-blink-detection/detect_blinks.py --shape-predictor 9-blink-detection/model/shape_predictor_68_face_landmarks.dat
+# python 09-blink-detection/detect_blinks.py --shape-predictor 09-blink-detection/model/shape_predictor_68_face_landmarks.dat
 
 # import the necessary packages
 from scipy.spatial import distance as dist
