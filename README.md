@@ -1,9 +1,23 @@
 17-day Computer Vision and Deep Learning Crash Course
 ==========================
-> This crash course by Adrian Rosebrock from PyImageSearch is awesome for getting hands-on computer vision and deep learning. It aims at teaching you the fundamentals with fast tutorials that solve real-world problems. 
+> This crash course by Adrian Rosebrock from PyImageSearch is awesome for getting hands-on in computer vision and deep learning. It aims at teaching you the fundamentals with fast tutorials that solve real-world problems. 
 
 * Link : https://www.pyimagesearch.com/welcome-crash-course/
 
+# Table of Contents
+0. [Installation](#ch0)
+1. [Day 1 | Face Detection with OpenCV and deep Learning](#ch1)
+1. [Day 2 | OpenCV Tutorial: A Guide to Learn OpenCV](#ch2)
+1. [Day 3 | Mobile Document Scanner](#ch3)
+1. [Day 4 | Multiple Choice Questions scanner using Optical Mark Recognition](#ch4)
+1. [Day 5 | Object tracker](#ch5)
+1. [Day 6 | Measuring the size of objetcs with OpenCV](#ch6)
+1. [Day 8 | Facial landmarks with dlib and OpenCV](#ch8)
+1. [Day 9 | Eye blink detection with OpenCV, Python and dlib](#ch9)
+1. [Day 10 | Drowsiness detection](#ch10)
+
+
+<a id="ch0"></a>
 # Intallation
 First, you will need to install [git](https://git-scm.com/), if you don't have it already.
 
@@ -69,6 +83,7 @@ Congrats! You are ready to learn Compute Vision and Deep Learning, hands on!
 
 Next, jump to the first tutorial **Day 1 : Face detection with OpenCV and deep learning**
 
+<a id="ch1"></a>
 ## Day 1 | Face Detection with OpenCV and deep learning
 
 Link to the blog post: <https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning>
@@ -76,12 +91,16 @@ Link to the blog post: <https://www.pyimagesearch.com/2018/02/26/face-detection-
 
 In your virtual environment you can run this command to perform face detection on an image of your choice :
 
-    $ python 1-face-detection-dl/detect_faces.py --image images/rooster.jpg --prototxt model/deploy.prototxt.txt --model model/res10_300x300_ssd_iter_140000.caffemodel
+    $ python 1-face-detection-dl/detect_faces.py --image images/rooster.jpg \
+    --prototxt model/deploy.prototxt.txt \
+    --model model/res10_300x300_ssd_iter_140000.caffemodel
     
 And for using the Webcam :
 
-    $ python 1-face-detection-dl/detect_faces_video.py --prototxt model/deploy.prototxt.txt --model model/res10_300x300_ssd_iter_140000.caffemodel
+    $ python 1-face-detection-dl/detect_faces_video.py --prototxt model/deploy.prototxt.txt \
+    --model model/res10_300x300_ssd_iter_140000.caffemodel
 
+<a id="ch2"></a>
 ## Day 2 | OpenCV Tutorial: A Guide to Learn OpenCV
 
 Link to the blog post: <https://www.pyimagesearch.com/2018/07/19/opencv-tutorial-a-guide-to-learn-opencv>
@@ -94,6 +113,7 @@ Counting objects in an image uses a lots of processing technique like edge detec
 
     $ python 2-opencv-tutorial/opencv_tutorial_02.py --image images/tetris_blocks.png
 
+<a id="ch3"></a>
 ## Day 3 | Mobile Document Scanner
 
 Link to the blog post: <https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes>
@@ -102,6 +122,7 @@ A practical application of edge detection to find the Region Of Interest and per
 
     $ python 3-document-scanner/scan.py --image 3-document-scanner/images/page.jpg
 
+<a id="ch4"></a>
 ## Day 4 | Multiple Choice Questions scanner using Optical Mark Recognition
 
 Link to the blog post: <https://www.pyimagesearch.com/2016/10/03/bubble-sheet-multiple-choice-scanner-and-test-grader-using-omr-python-and-opencv>
@@ -110,6 +131,7 @@ This is a bubble sheet scanner and test grader.
 
     $ python 4-omr-on-mcq/test_grader.py --image 4-omr-on-mcq/images/test_01.png
 
+<a id="ch5"></a>
 ## Day 5 | Object tracker
 
 Link to the blog post: <https://www.pyimagesearch.com/2015/09/14/ball-tracking-with-opencv>
@@ -118,14 +140,17 @@ This code detect the presence of a colored ball using computer vision techniques
 
     $ python 5-ball-tracking/ball_tracking.py --video 5-ball-tracking/ball_tracking_example.mp4
 
+<a id="ch6"></a>
 ## Day 6 | Measuring the size of objetcs with OpenCV
 
 Link to the blog post: <https://www.pyimagesearch.com/2016/03/28/measuring-size-of-objects-in-an-image-with-opencv>
 
 Thanks to the width of the left-most object in the image (in inches), our reference object, we can dertermine the size of any object in an image.
 
-    $  python 6-measuring-size-objetcs/object_size.py --image 6-measuring-size-objetcs/images/example_01.png --width 0.955 
+    $  python 6-measuring-size-objetcs/object_size.py --image 6-measuring-size-objetcs/images/example_01.png \
+    --width 0.955 
 
+<a id="ch8"></a>
 # Day 8 | Facial landmarks with dlib and OpenCV
 
 For this tutorial, you will need to install and configure dlib. I recommend this post [How to install dlib](https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/) by Adrian Rosebrock.
@@ -138,7 +163,6 @@ For Windows :
     <summary>Click me to show code.</summary>
     <pre>
         <code>
-
 $ git clone https://github.com/davisking/dlib.git
 $ cd dlib-19.17
 $ git checkout tags/v19.17mkdir build
@@ -156,7 +180,6 @@ $ cd buildcmake -G "Visual Studio 16 2019" -A x64 \
 -DCMAKE_INSTALL_PREFIX=install ..
 
 $ cmake --build . --config Debug --target INSTALL
-
 </code>
     </pre>
 </details>
@@ -167,12 +190,34 @@ Finally, go to the folder dlib-19.17 (for me) and execute :
 
 To run the code :
 
-    $ python 8-facial-landmarks/facial_landmarks.py --shape-predictor 8-facial-landmarks/model/shape_predictor_68_face_landmarks.dat --image 8-facial-landmarks/images/example_03.jpg
+    $ python 8-facial-landmarks/facial_landmarks.py \
+    --shape-predictor 8-facial-landmarks/model/shape_predictor_68_face_landmarks.dat \
+    --image 8-facial-landmarks/images/example_03.jpg
 
+<a id="ch9"></a>
 ## Day 9 | Eye blink detection with OpenCV, Python and dlib
 
 Link to the blog post : <https://www.pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib>
 
 Eye blinking is a tricky combination of severals image processing methods.
 
-    $ python 9-blink-detection/detect_blinks.py --shape-predictor 9-blink-detection/model/shape_predictor_68_face_landmarks.dat
+To access to your webcam :
+
+    $ python 9-blink-detection/detect_blinks.py \
+    --shape-predictor 9-blink-detection/model/shape_predictor_68_face_landmarks.dat
+
+For the example video execute the following command (make sure to uncomment the correct line, ad detailed in the code):
+
+    $ python 9-blink-detection/detect_blinks.py \
+	--shape-predictor 9-blink-detection/model/shape_predictor_68_face_landmarks.dat \
+	--video 9-blink-detection/videos/blink_detection_demo.mp4
+
+
+<a id="ch10"></a>
+## Day 10 | Drowsiness detection
+
+Now we know how detect eye blink we can extend it to a drowsiness detection.
+
+    $ python 10-detect-drowsiness/detect_drowsiness.py \
+    --shape-predictor 10-detect-drowsiness/model/shape_predictor_68_face_landmarks.dat \
+    --alarm 10-detect-drowsiness/sounds/alarm.wav

@@ -40,7 +40,7 @@ args = vars(ap.parse_args())
 # define two constants, one for the eye aspect ratio to indicate
 # blink and then a second constant for the number of consecutive
 # frames the eye must be below the threshold
-EYE_AR_THRESH = 0.3
+EYE_AR_THRESH = 0.25
 EYE_AR_CONSEC_FRAMES = 3
 
 # initialize the frame counters and the total number of blinks
@@ -60,8 +60,8 @@ predictor = dlib.shape_predictor(args["shape_predictor"])
 
 # start the video stream thread
 print("[INFO] starting video stream thread...")
-vs = FileVideoStream(args["video"]).start()
-fileStream = True
+# vs = FileVideoStream(args["video"]).start()
+# fileStream = True
 vs = VideoStream(src=0).start()
 # for a Raspberry Pi camera module, uncomment next line
 # vs = VideoStream(usePiCamera=True).start()
