@@ -19,6 +19,7 @@
 1. [Day 13 | Deep Learning with OpenCV](#ch13)
 1. [Day 14 | Create custom DL datasets](#ch14)
 1. [Day 15 | Train a Convolutional Neutal Networks with Keras](#ch15)
+1. [Day 16 | Real-time object detection with deep learning and OpenCV](#ch16)
 
 <a id="ch0"></a>
 # Intallation
