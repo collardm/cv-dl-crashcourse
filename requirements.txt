@@ -11,7 +11,7 @@ Keras==2.3.1
 
 #### CV packages
 imutils==0.5.3
-opencv-contrib-python==4.1.2.30
+opencv-contrib-python==4.2.0.32
 
 # Be careful to follow a tutorial for dlib, it's a little tricky
 # dlib==19.19.0
