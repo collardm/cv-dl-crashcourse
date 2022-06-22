@@ -1,5 +1,5 @@
 ##### Core scientific packages
-numpy==1.18.1
+numpy==1.22.0
 scipy==1.4.1
 
 ##### Installing Keras with TensorFlow backend
